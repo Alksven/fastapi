@@ -11,7 +11,8 @@ from os.path import abspath, dirname
 sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))))
 
 from app.database import Base, DATABASE_URL
-from app.hotels.models import Hotels, Rooms
+from app.hotels.models import Hotels
+from app.hotels.rooms.models import Rooms
 from app.users.model import Users
 from app.booking.models import Bookings
 
